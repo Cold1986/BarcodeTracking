@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS_Barcode", "KS_HTY\KS_Barcode.csproj", "{8348C7C5-BFB7-4DBA-9FC7-0A89D8006D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "CommonLib\CommonLib.csproj", "{77ABFD21-45C4-4D26-B70E-192308F31AAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS_Service", "KS_Service\KS_Service.csproj", "{260112E8-170C-4662-BD40-505BAB5451F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8348C7C5-BFB7-4DBA-9FC7-0A89D8006D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8348C7C5-BFB7-4DBA-9FC7-0A89D8006D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8348C7C5-BFB7-4DBA-9FC7-0A89D8006D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8348C7C5-BFB7-4DBA-9FC7-0A89D8006D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77ABFD21-45C4-4D26-B70E-192308F31AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77ABFD21-45C4-4D26-B70E-192308F31AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77ABFD21-45C4-4D26-B70E-192308F31AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77ABFD21-45C4-4D26-B70E-192308F31AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260112E8-170C-4662-BD40-505BAB5451F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260112E8-170C-4662-BD40-505BAB5451F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260112E8-170C-4662-BD40-505BAB5451F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260112E8-170C-4662-BD40-505BAB5451F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

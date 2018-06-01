@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Barcode Tracking - User Login</title>
+	<link href="style/reset.css" rel="stylesheet">
+	<link href="style/global.css" rel="stylesheet">
+	<link href="style/reference.css" rel="stylesheet">
+	<link href="style/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		<h1>Barcode Tracking</h1>
+		<select id="chooseLocation">
+			<option selected>昆山工厂</option>
+		</select>
+	</header>
+	<div class="main">
+		<aside>
+			<ul>
+				<li>
+					<a href="reference.html" class="focus"><i class="icon ion-clipboard"></i>参照表管理</a>
+				</li>
+			</ul>
+		</aside>
+		<div class="content">
+			<h2>当前位置：参照表管理</h2>
+			<div class="filter border-gray">
+				<div class="title border-bottom-gray"><i class="icon ion-android-search"></i>筛选条件</div>
+				<div class="filter-inner">
+					<ul class="filter-content clearfix">
+						<li>
+							<label>项目</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>颜色</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>AP/N</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>出wistronJDE料号</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>产品名称</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>盒形</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>小标签</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>OEM客户料号</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>装箱数量</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>版本</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>JDE料号</label>
+							<input type="text"></input>
+						</li>
+						<li>
+							<label>出wistron客户料号</label>
+							<input type="text"></input>
+						</li>
+					</ul>
+					<div class="control">
+						<Section>
+							<button class="btn">清空</button>
+							<button class="btn">查询</button>
+						</Section>
+					</div>
+				</div>
+			</div>
+			<div class="results">
+				<div class="results-inner">
+					<table id="resultTable" cellpadding="0" cellspacing="0">
+						<thead>
+							<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td>操作</td>
+							</tr>
+						</thead>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+						<tr>
+							<td>项目</td>
+							<td>产品名称</td>
+							<td>装箱数量</td>
+							<td>颜色</td>
+							<td>盒形</td>
+							<td>版本</td>
+							<td>AP/N</td>
+							<td>小标签</td>
+							<td>JDE料号</td>
+							<td>出wistronJDE料号</td>
+							<td>OEM客户料号</td>
+							<td>出wistron客户料号</td>
+							<td>产品描述</td>
+							<td class="operation"><i class="icon ion-edit"></i><i class="icon ion-trash-a"></i></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<button class="btn add">新增</button>
+		</div>
+	</div>
+	<div class="popup delete-alert">
+		<div class="popup-bg"></div>
+		<div class="popup-inner">
+			<p class="blue">确认删除本条记录？</p>
+			<div>
+				<button class="btn popup-cancel">取消</button><button class="btn delete-alert-comfirm">确认</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup add-item edit-item" style="display: block;">
+		<div class="popup-bg"></div>
+		<div class="popup-inner">
+			<p class="blue">新增产品</p>
+			<ul>
+				<li>
+					<label>项目</label>
+					<input type="text" id="r-item"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>产品名称</label>
+					<input type="text" id="r-product"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>装箱数量</label>
+					<input type="text" id="r-number"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>颜色</label>
+					<input type="text" id="r-color"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>盒形</label>
+					<input type="text" id="r-box"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>版本</label>
+					<input type="text" id="r-version"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>AP/N</label>
+					<input type="text" id="r-APN"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>小标签</label>
+					<input type="text" id="r-label"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>JDE料号</label>
+					<input type="text" id="r-JDECode"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>出wistronJDE料号</label>
+					<input type="text" id="r-JDECode-out"></input>
+				</li>
+				<li>
+					<label>OEM料号</label>
+					<input type="text" id="r-OEMCode"></input>
+					<span class="error-msg">必填！</span>
+				</li>
+				<li>
+					<label>出wistron客户料号</label>
+					<input type="text" id="r-OEMCode-out"></input>
+				</li>
+				<li>
+					<label>产品描述</label>
+					<textarea></textarea>
+				</li>
+			</ul>
+			<div>
+				<button class="btn popup-cancel">取消</button><button class="btn add-item-confirm">确认</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript">
+		clickPopup(".ion-trash-a",".delete-alert");
+		clickPopup(".add",".add-item",addItem);
+		function addItem(){
+			$(".add-item p").html("新增产品");
+		}
+		clickPopup(".ion-edit",".edit-item",editItem);
+		function editItem(){
+			$(".edit-item p").html("编辑产品");
+		}
+	</script>
+</body>
+</html>

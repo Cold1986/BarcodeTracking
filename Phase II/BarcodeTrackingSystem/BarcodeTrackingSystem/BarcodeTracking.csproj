@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75F77EB2-54C7-40BB-A71C-54370002BFFD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarcodeTracking</RootNamespace>
+    <AssemblyName>BarcodeTracking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\ionicons.svg" />
+    <Content Include="image\arrow.png" />
+    <Content Include="image\login-bg.jpg" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\stars.png" />
+    <Content Include="image\topbar-bg.png" />
+    <Content Include="js\KS\global.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\KS\ManageRepository.js" />
+    <Content Include="js\KS\PrintPickingList.js" />
+    <Content Include="js\KS\WHQueryPallet.js" />
+    <Content Include="js\KS\QueryPallet.js" />
+    <Content Include="js\KS\reference.js" />
+    <Content Include="KS\CondimentsInManage.aspx" />
+    <Content Include="KS\CondimentsQuery.aspx" />
+    <Content Include="KS\index.aspx" />
+    <Content Include="KS\ManageRepository.aspx" />
+    <Content Include="KS\PrintPickingList.aspx" />
+    <Content Include="KS\QueryPallet.aspx" />
+    <Content Include="KS\reference.aspx" />
+    <Content Include="KS\UploadFile.aspx" />
+    <Content Include="KS\Upload_KS_Condiments_In.aspx" />
+    <Content Include="KS\Upload_KS_Condiments_Out.aspx" />
+    <Content Include="KS\WHQueryPallet.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="style\bootstrap-theme.css" />
+    <Content Include="style\bootstrap.css" />
+    <Content Include="style\global.css" />
+    <Content Include="style\ionicons.min.css" />
+    <Content Include="style\login.css" />
+    <Content Include="style\reference.css" />
+    <Content Include="style\reset.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handler\account.ashx.cs">
+      <DependentUpon>account.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\KS\condimentsFacade.ashx.cs">
+      <DependentUpon>condimentsFacade.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\KS\palletFacade.ashx.cs">
+      <DependentUpon>palletFacade.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\KS\PrintPickingList.ashx.cs">
+      <DependentUpon>PrintPickingList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\KS\referenceFacade.ashx.cs">
+      <DependentUpon>referenceFacade.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\KS\repositoryFacade.ashx.cs">
+      <DependentUpon>repositoryFacade.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\KS\WHPalletFacade.ashx.cs">
+      <DependentUpon>WHPalletFacade.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\CondimentsInManage.aspx.cs">
+      <DependentUpon>CondimentsInManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\CondimentsInManage.aspx.designer.cs">
+      <DependentUpon>CondimentsInManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\CondimentsQuery.aspx.cs">
+      <DependentUpon>CondimentsQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\CondimentsQuery.aspx.designer.cs">
+      <DependentUpon>CondimentsQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\KSMasterPage.Master.cs">
+      <DependentUpon>KSMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\KSMasterPage.Master.designer.cs">
+      <DependentUpon>KSMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="KS\ManageRepository.aspx.cs">
+      <DependentUpon>ManageRepository.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\ManageRepository.aspx.designer.cs">
+      <DependentUpon>ManageRepository.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\PrintPickingList.aspx.cs">
+      <DependentUpon>PrintPickingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\PrintPickingList.aspx.designer.cs">
+      <DependentUpon>PrintPickingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\QueryPallet.aspx.cs">
+      <DependentUpon>QueryPallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\QueryPallet.aspx.designer.cs">
+      <DependentUpon>QueryPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\reference.aspx.cs">
+      <DependentUpon>reference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\reference.aspx.designer.cs">
+      <DependentUpon>reference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\UploadFile.aspx.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\UploadFile.aspx.designer.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\Upload_KS_Condiments_In.aspx.cs">
+      <DependentUpon>Upload_KS_Condiments_In.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\Upload_KS_Condiments_In.aspx.designer.cs">
+      <DependentUpon>Upload_KS_Condiments_In.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\Upload_KS_Condiments_Out.aspx.cs">
+      <DependentUpon>Upload_KS_Condiments_Out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\Upload_KS_Condiments_Out.aspx.designer.cs">
+      <DependentUpon>Upload_KS_Condiments_Out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KS\WHQueryPallet.aspx.cs">
+      <DependentUpon>WHQueryPallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KS\WHQueryPallet.aspx.designer.cs">
+      <DependentUpon>WHQueryPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\account.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BarcodeTracking.Enum\BarcodeTracking.Enum.csproj">
+      <Project>{9865EA0E-12B5-474A-A612-0C97023213D9}</Project>
+      <Name>BarcodeTracking.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BarcodeTrackingSystem.Entity\BarcodeTracking.Entity.csproj">
+      <Project>{BF7AB824-6312-4363-8C60-1978A314341C}</Project>
+      <Name>BarcodeTracking.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biz\BarcodeTracking.Biz.csproj">
+      <Project>{34E0AD63-1BBD-4B44-9637-EC57CC3EF884}</Project>
+      <Name>BarcodeTracking.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\ionicons.eot" />
+    <None Include="fonts\ionicons.ttf" />
+    <None Include="fonts\ionicons.woff" />
+    <Content Include="KS\KSMasterPage.Master" />
+    <Content Include="Handler\KS\palletFacade.ashx" />
+    <Content Include="Handler\KS\repositoryFacade.ashx" />
+    <Content Include="Handler\KS\PrintPickingList.ashx" />
+    <Content Include="Handler\KS\WHPalletFacade.ashx" />
+    <Content Include="Handler\KS\condimentsFacade.ashx" />
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\KS\referenceFacade.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="downloads\KS\Pallet\" />
+    <Folder Include="UploadFiles\KS\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10296</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

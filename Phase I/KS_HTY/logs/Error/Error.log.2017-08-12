@@ -1,0 +1,325 @@
+2017-08-12 16:56:16,439 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.MySqlHelper.PrepareCommand(MySqlCommand command, MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 261
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 713
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getInfo.ashx.cs:line 77
+2017-08-12 16:57:35,976 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.MySqlHelper.PrepareCommand(MySqlCommand command, MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 261
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 713
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getInfo.ashx.cs:line 77
+2017-08-12 16:59:35,783 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.MySqlHelper.PrepareCommand(MySqlCommand command, MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 261
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 713
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getInfo.ashx.cs:line 77
+2017-08-12 18:31:07,103 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.ExcelHelper.DataTable3Excel(DataTable dtData, String FileName) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ExcelHelper.cs:line 229
+   at KS_HTY.handler.getInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getInfo.ashx.cs:line 113
+2017-08-12 19:32:53,929 - 查询异常: Retrieving the COM class factory for component with CLSID {00024500-0000-0000-C000-000000000046} failed due to the following error: 80070005 Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED)).   at System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   at System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   at System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at KS_HTY.ExcelHelper.exportDataTableToExcel(DataTable dataTable, String fileName, String filePath) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ExcelHelper.cs:line 251
+   at KS_HTY.handler.getInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getInfo.ashx.cs:line 144
+2017-08-12 19:33:08,213 - 查询异常: Retrieving the COM class factory for component with CLSID {00024500-0000-0000-C000-000000000046} failed due to the following error: 80070005 Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED)).   at System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   at System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   at System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at KS_HTY.ExcelHelper.exportDataTableToExcel(DataTable dataTable, String fileName, String filePath) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ExcelHelper.cs:line 251
+   at KS_HTY.handler.getInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getInfo.ashx.cs:line 144
+2017-08-12 21:07:25,312 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 52
+2017-08-12 21:07:47,017 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 52
+2017-08-12 21:09:30,752 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 52
+2017-08-12 21:09:45,035 - 查询异常: Object reference not set to an instance of an object.   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 52
+2017-08-12 21:13:15,380 - 查询异常: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select SONo,JDENo,ProductionNo,Num,DATE_FORMAT(upload_date,'%Y-%m-%d') as upload' at line 1   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 144
+2017-08-12 21:14:55,553 - 查询异常: Unknown column 'id' in 'order clause'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 144
+2017-08-12 21:18:05,001 - 查询异常: Object of type 'System.String' cannot be converted to type 'System.DateTime'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:20:12,002 - 查询异常: Object of type 'System.String' cannot be converted to type 'System.DateTime'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:30:23,577 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:31:33,288 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:31:55,180 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:32:50,181 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:35:25,705 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:36:11,737 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:37:03,444 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:43:12,528 - 查询异常: Object of type 'System.Double' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:44:30,421 - 查询异常: Object of type 'System.String' cannot be converted to type 'System.DateTime'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 162
+2017-08-12 21:50:43,959 - 获取信息异常: Object of type 'System.DateTime' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.UploadInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\UploadInfo.ashx.cs:line 51
+2017-08-12 21:51:26,216 - 获取信息异常: Object of type 'System.DateTime' cannot be converted to type 'System.String'.   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at KS_HTY.ConvertHelper.DataTableToList[T](DataTable dt) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\ConvertHelper.cs:line 41
+   at KS_HTY.handler.UploadInfo.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\UploadInfo.ashx.cs:line 51
+2017-08-12 21:54:26,128 - 查询异常: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update from (select SONo,JDENo,ProductionNo,Num,DATE_FORMAT(upload_date,'%Y-%m-%' at line 1   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:46:54,298 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:46:57,658 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:47:03,264 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:49:46,295 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:50:39,921 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:52:56,462 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151
+2017-08-12 23:53:29,532 - 查询异常: Unknown column 'SONo' in 'field list'   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 717
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\getReport.ashx.cs:line 151

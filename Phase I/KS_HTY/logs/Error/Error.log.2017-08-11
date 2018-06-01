@@ -1,0 +1,10 @@
+2017-08-11 13:09:12,933 - 销售出库模板.xlsx 上传异常: Unknown column 'F3' in 'field list'   at KS_HTY.MySqlHelper.BulkInsert(String connectionString, DataTable table) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\MySqlHelper.cs:line 843
+   at KS_HTY.ExcelBiz.Excel2MySql(String uploadPath, String filename, String userName, Int32 type) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\Biz\ExcelBiz.cs:line 135
+   at KS_HTY.handler.upload.ProcessRequest(HttpContext context) in D:\project\projects\KS_HTY\KS_HTY\KS_HTY\handler\upload.ashx.cs:line 56
+
+
+
+桌子 电脑，扫描仪 是否到位，下午去
+
+JDE->成品编码
+箱唛标签 隐藏

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KSMasterPage.master.cs"
+    Inherits="BarcodeTracking.KS.KSMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <link href="../style/reset.css" rel="stylesheet">
+    <link href="../style/global.css" rel="stylesheet">
+    <link href="../style/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+		<h1>Barcode Tracking</h1>
+		<select id="chooseLocation">
+			<option selected>昆山工厂</option>
+		</select>
+	</header>
+        <div class="main">
+            <aside>
+			<ul>
+				<li id="icon_reference" runat="server" visible="false">
+					<a href="reference.aspx"><i class="icon ion-clipboard"></i>参照表管理</a>
+				</li>
+                <li id="icon_queryPallet" runat="server" visible="false">
+					<a href="QueryPallet.aspx"><i class="icon ion-search"></i>生产组卡板</a>
+				</li>
+                <li id="icon_queryPalletByWH" runat="server" visible="false">
+					<a href="WHQueryPallet.aspx"><i class="icon ion-search"></i>出入库查询</a>
+				</li>
+                <li id="icon_manageRepository" runat="server" visible="false">
+					<a href="ManageRepository.aspx"><i class="icon ion-compose"></i>库位管理</a>
+				</li>
+                 <li id="icon_uploadFile" runat="server" visible="false">
+					<a href="UploadFile.aspx"><i class="icon ion-document"></i>上传出货记录</a>
+				</li>
+                 <li id="icon_upload_ks_condiments_in" runat="server" visible="false">
+					<a href="Upload_KS_Condiments_In.aspx"><i class="icon ion-log-in"></i>上传小料接收记录</a>
+				</li>
+                 <li id="icon_upload_ks_condiments_out" runat="server" visible="false">
+					<a href="Upload_KS_Condiments_Out.aspx"><i class="icon ion-log-out"></i>上传小料出库记录</a>
+				</li>
+                <li id="icon_printPickingList" runat="server" visible="false">
+					<a href="PrintPickingList.aspx"><i class="icon ion-printer"></i>打印拣货单</a>
+				</li>
+			</ul>
+		</aside>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+2017-08-21 11:47:39,111 - 查询异常: Retrieving the COM class factory for component with CLSID {00024500-0000-0000-C000-000000000046} failed due to the following error: 80070005 Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED)).   at System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   at System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   at System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at KS_HTY.ExcelHelper.exportDataTableToExcel(DataTable dataTable, String fileName, String filePath) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\ExcelHelper.cs:line 251
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 198
+2017-08-21 11:53:57,565 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 216
+2017-08-21 11:55:48,209 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 216
+2017-08-21 13:38:02,877 - 查询异常: Could not find file 'D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\downloads\outstock\201708211338026756_0rr248883.xls'.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   at System.Web.HttpResponse.WriteFile(String filename)
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 215
+2017-08-21 13:38:11,522 - 查询异常: Could not find file 'D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\downloads\outstock\201708211338114713_0rr248883.xls'.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   at System.Web.HttpResponse.WriteFile(String filename)
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 215
+2017-08-21 13:44:19,642 - 查询异常: Could not find file 'D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\downloads\outstock\201708211344180576_0rr248883.xls'.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   at System.Web.HttpResponse.WriteFile(String filename)
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 215
+2017-08-21 13:44:57,835 - 查询异常: Could not find file 'D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\downloads\outstock\201708211344577616_0rr248883.xls'.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   at System.Web.HttpResponse.WriteFile(String filename)
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 215
+2017-08-21 13:49:53,415 - 查询异常: Could not find file 'D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\downloads\outstock\201708211349172843_0_rr248883.xls'.   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   at System.Web.HttpResponse.WriteFile(String filename)
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 215
+2017-08-21 13:51:11,735 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 220
+2017-08-21 13:54:37,632 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 220
+2017-08-21 13:56:03,951 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 220
+2017-08-21 13:56:59,278 - 查询异常: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.   at MySql.Data.MySqlClient.MySqlConnection.HandleTimeoutOrThreadAbort(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MySql.Data.MySqlClient.Driver.Configure(MySqlConnection connection)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at KS_HTY.MySqlHelper.PrepareCommand(MySqlCommand command, MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 243
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 713
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 152
+2017-08-21 13:57:41,155 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 219
+2017-08-21 13:57:46,236 - 查询异常: Thread was being aborted.   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 219
+2017-08-21 14:00:13,957 - 查询异常: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.   at MySql.Data.MySqlClient.MySqlConnection.HandleTimeoutOrThreadAbort(Exception ex)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.Driver.LoadCharacterSets(MySqlConnection connection)
+   at MySql.Data.MySqlClient.Driver.Configure(MySqlConnection connection)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at KS_HTY.MySqlHelper.PrepareCommand(MySqlCommand command, MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 243
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, MySqlTransaction transaction, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 713
+   at KS_HTY.MySqlHelper.ExecuteDataSet(MySqlConnection connection, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 684
+   at KS_HTY.MySqlHelper.ExecuteDataSet(String connectionString, CommandType commandType, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 670
+   at KS_HTY.MySqlHelper.ExecuteDataTable(String connectionString, String commandText, MySqlParameter[] parms) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\common\MySqlHelper.cs:line 589
+   at KS_HTY.handler.getReport.ProcessRequest(HttpContext context) in D:\project\projects\KS_Barcode\03 Construct\SourceCode\KS_HTY\handler\getReport.ashx.cs:line 152
